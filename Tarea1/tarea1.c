@@ -15,14 +15,15 @@ static int __init info_module_init(void) {
     struct task_struct *task;
 
     // Obtener información de la RAM
-    si_meminfo(&i);
+    
+    for_each_process(task) {
+        si_meminfo(&i);
 
     printk(KERN_INFO "Total RAM: %lu kB\n", i.totalram * 4);
     printk(KERN_INFO "Free RAM: %lu kB\n", i.freeram * 4);
 
     // Imprimir procesos
     printk(KERN_INFO "Procesos:\n");
-    for_each_process(task) {
         if (task->parent)
             printk(KERN_INFO "Padre PID: %d, Hijo PID: %d\n", task->parent->pid, task->pid);
     }
