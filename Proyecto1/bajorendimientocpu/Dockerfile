@@ -1,3 +1,4 @@
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y stress
-CMD ["stress", "--cpu", "2", "--timeout", "300"]
+CMD ["stress", "--cpu", "1", "--timeout", "60"]
+
