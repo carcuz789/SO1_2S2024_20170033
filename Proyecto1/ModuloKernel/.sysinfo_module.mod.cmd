@@ -1,0 +1,1 @@
+savedcmd_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.mod := printf '%s\n'   sysinfo_module.o | awk '!x[$$0]++ { print("/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/"$$0) }' > /home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.mod

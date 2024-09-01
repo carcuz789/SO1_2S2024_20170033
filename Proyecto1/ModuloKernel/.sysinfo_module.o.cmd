@@ -1,11 +1,8 @@
-savedcmd_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o := gcc-12 -Wp,-MMD,/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/.tarea1.mod.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -I./ubuntu/include -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fpatchable-function-entry=16,16 -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -falign-functions=16 -fno-strict-overflow -fno-stack-check -fconserve-stack -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wmissing-declarations -Wmissing-prototypes -Wframe-larger-than=1024 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-overflow -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-restrict -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-truncation -Wno-override-init -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -g -gdwarf-5 -fsanitize=bounds-strict -fsanitize=shift -fsanitize=bool -fsanitize=enum -DMODULE -DKBUILD_BASENAME='"tarea1.mod"' -DKBUILD_MODNAME='"tarea1"' -D__KBUILD_MODNAME=kmod_tarea1 -c -o /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.c
+savedcmd_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o := gcc-12 -Wp,-MMD,/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/.sysinfo_module.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -I./ubuntu/include -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fpatchable-function-entry=16,16 -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -falign-functions=16 -fno-strict-overflow -fno-stack-check -fconserve-stack -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wmissing-declarations -Wmissing-prototypes -Wframe-larger-than=1024 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-overflow -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-restrict -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-truncation -Wno-override-init -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -g -gdwarf-5  -fsanitize=bounds-strict -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"sysinfo_module"' -DKBUILD_MODNAME='"sysinfo_module"' -D__KBUILD_MODNAME=kmod_sysinfo_module -c -o /home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o /home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.c   ; ./tools/objtool/objtool --hacks=jump_label --hacks=noinstr --hacks=skylake --retpoline --rethunk --sls --stackval --static-call --uaccess --prefix=16   --module /home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o
 
-source_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o := /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.c
+source_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o := /home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.c
 
-deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o := \
-    $(wildcard include/config/UNWINDER_ORC) \
-    $(wildcard include/config/MODULE_UNLOAD) \
-    $(wildcard include/config/RETPOLINE) \
+deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o := \
   include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   include/linux/kconfig.h \
@@ -23,6 +20,7 @@ deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o := \
     $(wildcard include/config/CC_HAS_ASM_INLINE) \
   include/linux/compiler_attributes.h \
   include/linux/compiler-gcc.h \
+    $(wildcard include/config/RETPOLINE) \
     $(wildcard include/config/GCC_ASM_GOTO_OUTPUT_WORKAROUND) \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/SHADOW_CALL_STACK) \
@@ -50,6 +48,7 @@ deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o := \
     $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
     $(wildcard include/config/KUNIT) \
     $(wildcard include/config/PRINTK_INDEX) \
+    $(wildcard include/config/MODULE_UNLOAD) \
     $(wildcard include/config/CONSTRUCTORS) \
     $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
     $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
@@ -1022,46 +1021,75 @@ deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o := \
   include/linux/error-injection.h \
   include/asm-generic/error-injection.h \
   arch/x86/include/asm/module.h \
+    $(wildcard include/config/UNWINDER_ORC) \
   include/asm-generic/module.h \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
-  include/linux/build-salt.h \
-    $(wildcard include/config/BUILD_SALT) \
-  include/linux/elfnote.h \
-  include/linux/elfnote-lto.h \
-    $(wildcard include/config/LTO) \
-  include/linux/export-internal.h \
+  include/linux/proc_fs.h \
+    $(wildcard include/config/PROC_PID_ARCH_STATUS) \
+  include/linux/seq_file.h \
+  include/linux/string_helpers.h \
+  include/linux/ctype.h \
+  include/linux/string_choices.h \
+  include/linux/mm.h \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_BITS) \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_COMPAT_BITS) \
+    $(wildcard include/config/ARCH_USES_HIGH_VMA_FLAGS) \
+    $(wildcard include/config/ARCH_HAS_PKEYS) \
+    $(wildcard include/config/PPC) \
     $(wildcard include/config/PARISC) \
-  include/linux/vermagic.h \
-    $(wildcard include/config/PREEMPT_BUILD) \
-  include/generated/utsrelease.h \
-  arch/x86/include/asm/vermagic.h \
-    $(wildcard include/config/M486SX) \
-    $(wildcard include/config/M486) \
-    $(wildcard include/config/M586) \
-    $(wildcard include/config/M586TSC) \
-    $(wildcard include/config/M586MMX) \
-    $(wildcard include/config/MCORE2) \
-    $(wildcard include/config/M686) \
-    $(wildcard include/config/MPENTIUMII) \
-    $(wildcard include/config/MPENTIUMIII) \
-    $(wildcard include/config/MPENTIUMM) \
-    $(wildcard include/config/MPENTIUM4) \
-    $(wildcard include/config/MK6) \
-    $(wildcard include/config/MK7) \
-    $(wildcard include/config/MK8) \
-    $(wildcard include/config/MELAN) \
-    $(wildcard include/config/MCRUSOE) \
-    $(wildcard include/config/MEFFICEON) \
-    $(wildcard include/config/MWINCHIPC6) \
-    $(wildcard include/config/MWINCHIP3D) \
-    $(wildcard include/config/MCYRIXIII) \
-    $(wildcard include/config/MVIAC3_2) \
-    $(wildcard include/config/MVIAC7) \
-    $(wildcard include/config/MGEODEGX1) \
-    $(wildcard include/config/MGEODE_LX) \
+    $(wildcard include/config/SPARC64) \
+    $(wildcard include/config/ARM64_MTE) \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_MINOR) \
+    $(wildcard include/config/SHMEM) \
+    $(wildcard include/config/MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_PTE_SPECIAL) \
+    $(wildcard include/config/DEBUG_VM_RB) \
+    $(wildcard include/config/PAGE_POISONING) \
+    $(wildcard include/config/INIT_ON_ALLOC_DEFAULT_ON) \
+    $(wildcard include/config/INIT_ON_FREE_DEFAULT_ON) \
+    $(wildcard include/config/DEBUG_PAGEALLOC) \
+    $(wildcard include/config/ARCH_WANT_OPTIMIZE_DAX_VMEMMAP) \
+    $(wildcard include/config/HUGETLBFS) \
+    $(wildcard include/config/MAPPING_DIRTY_HELPERS) \
+  include/linux/page_ext.h \
+  include/linux/stacktrace.h \
+    $(wildcard include/config/ARCH_STACKWALK) \
+    $(wildcard include/config/STACKTRACE) \
+    $(wildcard include/config/HAVE_RELIABLE_STACKTRACE) \
+  include/linux/stackdepot.h \
+    $(wildcard include/config/STACKDEPOT) \
+    $(wildcard include/config/STACKDEPOT_MAX_FRAMES) \
+    $(wildcard include/config/STACKDEPOT_ALWAYS_INIT) \
+  include/linux/page_ref.h \
+    $(wildcard include/config/DEBUG_PAGE_REF) \
+  include/linux/sizes.h \
+  include/linux/pgtable.h \
+    $(wildcard include/config/HIGHPTE) \
+    $(wildcard include/config/ARCH_HAS_NONLEAF_PMD_YOUNG) \
+    $(wildcard include/config/ARCH_HAS_HW_PTE_YOUNG) \
+    $(wildcard include/config/GUP_GET_PXX_LOW_HIGH) \
+    $(wildcard include/config/ARCH_WANT_PMD_MKWRITE) \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMAP) \
+    $(wildcard include/config/X86_ESPFIX64) \
+  include/linux/memremap.h \
+    $(wildcard include/config/DEVICE_PRIVATE) \
+    $(wildcard include/config/PCI_P2PDMA) \
+  include/linux/ioport.h \
+  include/linux/huge_mm.h \
+  include/linux/sched/coredump.h \
+    $(wildcard include/config/CORE_DUMP_DEFAULT_ELF_HEADERS) \
+  include/linux/vmstat.h \
+    $(wildcard include/config/VM_EVENT_COUNTERS) \
+    $(wildcard include/config/DEBUG_TLBFLUSH) \
+    $(wildcard include/config/PER_VMA_LOCK_STATS) \
+  include/linux/vm_event_item.h \
+    $(wildcard include/config/MEMORY_BALLOON) \
+    $(wildcard include/config/BALLOON_COMPACTION) \
 
-/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o: $(deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o)
+/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o: $(deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o)
 
-$(deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.mod.o):
+$(deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o):
+
+/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o: $(wildcard ./tools/objtool/objtool)

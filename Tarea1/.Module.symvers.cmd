@@ -1,1 +1,1 @@
-savedcmd_/home/rodrigo/SO1_2S2024_20170033/Tarea1/Module.symvers :=  scripts/mod/modpost -m -a      -o /home/rodrigo/SO1_2S2024_20170033/Tarea1/Module.symvers -T /home/rodrigo/SO1_2S2024_20170033/Tarea1/modules.order -i Module.symvers -e 
+savedcmd_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/Module.symvers -T /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/modules.order -i Module.symvers -e 

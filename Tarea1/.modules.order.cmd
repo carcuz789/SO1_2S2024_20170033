@@ -1,1 +1,1 @@
-savedcmd_/home/rodrigo/SO1_2S2024_20170033/Tarea1/modules.order := {   echo /home/rodrigo/SO1_2S2024_20170033/Tarea1/tarea1.o; :; } > /home/rodrigo/SO1_2S2024_20170033/Tarea1/modules.order
+savedcmd_/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/modules.order := {   echo /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/tarea1.o; :; } > /home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea1/modules.order
