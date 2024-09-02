@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/home/rodrigo/Documentos/SO1_2S2024_20170033/Tarea3/contenedores_servicio/target/debug/build/mime_guess-fc234de432c4ee86/out/mime_types_generated.rs
