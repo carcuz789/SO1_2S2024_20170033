@@ -6,8 +6,14 @@
 #include <linux/mm.h>
 #include <linux/slab.h>
 #include <linux/uaccess.h>
+#include <linux/fs.h>
+#include <linux/file.h>
+#include <linux/string.h>
 
 #define PROC_FILE_NAME "sysinfo_201700633"
+#define CGROUP_FILE_PATH_SIZE 256
+#define CGROUP_PREFIX "/system.slice/docker-"
+#define CGROUP_PREFIX_LEN (sizeof(CGROUP_PREFIX) - 1)
 
 static struct proc_dir_entry *proc_file_entry;
 
@@ -34,9 +40,16 @@ static void *proc_seq_next(struct seq_file *s, void *v, loff_t *pos)
 
 static int proc_seq_show(struct seq_file *s, void *v)
 {
-    printk(KERN_INFO "sysinfo_module: Entrando en proc_seq_show\n");
-    
+    long mem_util;
+    u64 cpu_util;
+    // char cgroup_file_path[CGROUP_FILE_PATH_SIZE];
+    // char cgroup_data[CGROUP_FILE_PATH_SIZE];
+    // struct file *file;
+    // loff_t pos;
+    // ssize_t read_size;
     struct sysinfo info;
+    struct task_struct *task;
+    
     si_meminfo(&info);
 
     seq_printf(s, "{\n");
@@ -45,14 +58,11 @@ static int proc_seq_show(struct seq_file *s, void *v)
     seq_printf(s, "\"used_memory_kb\": %lu,\n", (info.totalram - info.freeram) * (info.mem_unit / 1024));
     printk(KERN_INFO "sysinfo_module: Punto de depuración 1\n");
 
-    struct task_struct *task;
     seq_printf(s, "\"processes\": [\n");
 
     for_each_process(task) {
         struct mm_struct *mm = task->mm;
         char cmdline[256] = "N/A";
-        char container_id[64] = "N/A";
-        char container_name[64] = "N/A";
         int len = 0;
 
         printk(KERN_INFO "sysinfo_module: Procesando PID %d\n", task->pid);
@@ -60,18 +70,6 @@ static int proc_seq_show(struct seq_file *s, void *v)
         if (mm) {
             len = snprintf(cmdline, sizeof(cmdline), "%s", task->comm);
             seq_printf(s, "{ \"cmdline\": \"%s\",\n", cmdline);
-            
-            // Extraer el ID del contenedor del cmdline
-            char *ptr_id = strstr(cmdline, "--id");
-            if (ptr_id) {
-                sscanf(ptr_id, "--id %63s", container_id);
-            }
-
-            // Extraer el nombre del contenedor del cmdline
-            char *ptr_name = strstr(cmdline, "--name");
-            if (ptr_name) {
-                sscanf(ptr_name, "--name %63s", container_name);
-            }
         } else {
             seq_printf(s, "{ \"cmdline\": \"N/A\",\n");
             printk(KERN_WARNING "Process %d has no memory management info.\n", task->pid);
@@ -79,8 +77,6 @@ static int proc_seq_show(struct seq_file *s, void *v)
 
         seq_printf(s, "\"pid\": %d,\n", task->pid);
         seq_printf(s, "\"name\": \"%s\",\n", task->comm);
-        seq_printf(s, "\"container_id\": \"%s\",\n", container_id);
-        seq_printf(s, "\"container_name\": \"%s\",\n", container_name);
         seq_printf(s, "\"vsz_kb\": %lu,\n", mm ? (mm->total_vm << (PAGE_SHIFT - 10)) : 0);
 
         unsigned long rss_kb = 0;
@@ -89,7 +85,40 @@ static int proc_seq_show(struct seq_file *s, void *v)
         } else {
             printk(KERN_WARNING "Process %d has no RSS info.\n", task->pid);
         }
-        seq_printf(s, "\"rss_kb\": %lu\n", rss_kb);
+        seq_printf(s, "\"rss_kb\": %lu,\n", rss_kb);
+        
+        mem_util = (rss_kb * 100) / ((info.totalram * info.mem_unit) >> 10);  // Utilización de memoria en porcentaje
+        cpu_util = task->utime + task->stime; // Usar tiempo de usuario y sistema
+        seq_printf(s, "\"Memoria Utilizada\": \"%ld %%\",\n", mem_util);
+        seq_printf(s, "\"Cpu Utilizado\": \"%llu\",\n", cpu_util);
+
+        // Leer el archivo cgroup para obtener el ID del contenedor
+        // snprintf(cgroup_file_path, CGROUP_FILE_PATH_SIZE, "/proc/%d/cgroup", task->pid);
+
+        // file = filp_open(cgroup_file_path, O_RDONLY, 0);
+        // if (IS_ERR(file)) {
+        //     seq_printf(s, "\"container_id\": \"N/A\",\n");
+        //     continue;
+        // }
+
+        // pos = 0;
+        // read_size = kernel_read(file, cgroup_data, CGROUP_FILE_PATH_SIZE - 1, &pos);
+        // filp_close(file, NULL);
+
+        // if (read_size > 0) {
+        //     cgroup_data[read_size] = '\0';
+        //     char *start = strstr(cgroup_data, CGROUP_PREFIX);
+        //     if (start) {
+        //         start += CGROUP_PREFIX_LEN;
+        //         char *end = strchr(start, '.');
+        //         if (end) *end = '\0';
+        //         seq_printf(s, "\"container_id\": \"%s\",\n", start);
+        //     } else {
+        //         seq_printf(s, "\"container_id\": \"N/A\",\n");
+        //     }
+        // } else {
+        //     seq_printf(s, "\"container_id\": \"N/A\",\n");
+        // }
 
         seq_printf(s, "},\n");
     }

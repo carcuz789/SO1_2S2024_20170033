@@ -1087,6 +1087,7 @@ deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo
   include/linux/vm_event_item.h \
     $(wildcard include/config/MEMORY_BALLOON) \
     $(wildcard include/config/BALLOON_COMPACTION) \
+  include/linux/file.h \
 
 /home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o: $(deps_/home/rodrigo/Documentos/SO1_2S2024_20170033/Proyecto1/ModuloKernel/sysinfo_module.o)
 

@@ -38,8 +38,6 @@ __used __section("__versions") = {
 	{ 0x6d26b3a7, "seq_printf" },
 	{ 0x441c5e2e, "init_task" },
 	{ 0x656e4a6e, "snprintf" },
-	{ 0x1e6d26a8, "strstr" },
-	{ 0xbcab6ee6, "sscanf" },
 	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0x737c5c97, "proc_remove" },
 	{ 0x2fa57770, "seq_read" },
@@ -57,4 +55,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "9D07080DE5E3392E85EA65B");
+MODULE_INFO(srcversion, "8E7553BCF40CE00D39ED8BB");
