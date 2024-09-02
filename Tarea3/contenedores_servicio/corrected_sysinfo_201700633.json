@@ -1,8 +1,8 @@
 {
-  "free_memory_kb": 338936,
+  "free_memory_kb": 707064,
   "processes": [
     {
-      "Cpu Utilizado": "3231000000",
+      "Cpu Utilizado": "3237000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "systemd",
       "name": "systemd",
@@ -110,7 +110,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "72000000",
+      "Cpu Utilizado": "73000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "ksoftirqd/0",
@@ -353,7 +353,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "5000000",
+      "Cpu Utilizado": "6000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "migration/5",
@@ -515,7 +515,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "4445000000",
+      "Cpu Utilizado": "4750000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kcompactd0",
@@ -641,7 +641,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "296000000",
+      "Cpu Utilizado": "300000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/1:1H",
@@ -650,7 +650,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1756000000",
+      "Cpu Utilizado": "2167000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kswapd0",
@@ -767,7 +767,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1654000000",
+      "Cpu Utilizado": "1660000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/0:1H",
@@ -776,7 +776,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "280000000",
+      "Cpu Utilizado": "283000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/6:1H",
@@ -794,7 +794,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "271000000",
+      "Cpu Utilizado": "272000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/7:1H",
@@ -803,7 +803,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1116000000",
+      "Cpu Utilizado": "1156000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/3:1H",
@@ -812,7 +812,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "371000000",
+      "Cpu Utilizado": "372000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/2:1H",
@@ -821,7 +821,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "341000000",
+      "Cpu Utilizado": "343000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/4:1H",
@@ -938,7 +938,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1276000000",
+      "Cpu Utilizado": "1301000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "jbd2/nvme0n1p5-",
@@ -956,12 +956,12 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "7372000000",
+      "Cpu Utilizado": "7606000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "systemd-journal",
       "name": "systemd-journal",
       "pid": 308,
-      "rss_kb": 65484,
+      "rss_kb": 69836,
       "vsz_kb": 105592
     },
     {
@@ -1001,7 +1001,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "4001000000",
+      "Cpu Utilizado": "4843000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/144-iwlwifi",
@@ -1010,7 +1010,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1534000000",
+      "Cpu Utilizado": "1775000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/145-iwlwifi",
@@ -1019,7 +1019,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1054000000",
+      "Cpu Utilizado": "1056000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/146-iwlwifi",
@@ -1028,7 +1028,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "816000000",
+      "Cpu Utilizado": "937000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/147-iwlwifi",
@@ -1037,7 +1037,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "3273000000",
+      "Cpu Utilizado": "3276000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/148-iwlwifi",
@@ -1046,7 +1046,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1116000000",
+      "Cpu Utilizado": "1117000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/149-iwlwifi",
@@ -1055,7 +1055,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1160000000",
+      "Cpu Utilizado": "1165000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/150-iwlwifi",
@@ -1073,7 +1073,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "3530000000",
+      "Cpu Utilizado": "3537000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "irq/152-iwlwifi",
@@ -1154,7 +1154,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1141000000",
+      "Cpu Utilizado": "1156000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "systemd-oomd",
       "name": "systemd-oomd",
@@ -1163,7 +1163,7 @@
       "vsz_kb": 14836
     },
     {
-      "Cpu Utilizado": "2361000000",
+      "Cpu Utilizado": "2379000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "systemd-resolve",
       "name": "systemd-resolve",
@@ -1190,7 +1190,7 @@
       "vsz_kb": 242912
     },
     {
-      "Cpu Utilizado": "366000000",
+      "Cpu Utilizado": "373000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "acpid",
       "name": "acpid",
@@ -1199,7 +1199,7 @@
       "vsz_kb": 2816
     },
     {
-      "Cpu Utilizado": "645000000",
+      "Cpu Utilizado": "655000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "avahi-daemon",
       "name": "avahi-daemon",
@@ -1226,7 +1226,7 @@
       "vsz_kb": 12112
     },
     {
-      "Cpu Utilizado": "5371000000",
+      "Cpu Utilizado": "5425000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "dbus-daemon",
       "name": "dbus-daemon",
@@ -1235,7 +1235,7 @@
       "vsz_kb": 11344
     },
     {
-      "Cpu Utilizado": "3266000000",
+      "Cpu Utilizado": "3314000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "NetworkManager",
       "name": "NetworkManager",
@@ -1244,7 +1244,7 @@
       "vsz_kb": 267092
     },
     {
-      "Cpu Utilizado": "279000000",
+      "Cpu Utilizado": "281000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "irqbalance",
       "name": "irqbalance",
@@ -1267,7 +1267,7 @@
       "cmdline": "polkitd",
       "name": "polkitd",
       "pid": 852,
-      "rss_kb": 11312,
+      "rss_kb": 11184,
       "vsz_kb": 246248
     },
     {
@@ -1285,7 +1285,7 @@
       "cmdline": "rsyslogd",
       "name": "rsyslogd",
       "pid": 857,
-      "rss_kb": 6476,
+      "rss_kb": 6464,
       "vsz_kb": 222404
     },
     {
@@ -1294,7 +1294,7 @@
       "cmdline": "snapd",
       "name": "snapd",
       "pid": 867,
-      "rss_kb": 38112,
+      "rss_kb": 22772,
       "vsz_kb": 1764172
     },
     {
@@ -1334,7 +1334,7 @@
       "vsz_kb": 393532
     },
     {
-      "Cpu Utilizado": "640000000",
+      "Cpu Utilizado": "652000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "wpa_supplicant",
       "name": "wpa_supplicant",
@@ -1357,7 +1357,7 @@
       "cmdline": "ModemManager",
       "name": "ModemManager",
       "pid": 916,
-      "rss_kb": 10340,
+      "rss_kb": 9316,
       "vsz_kb": 317976
     },
     {
@@ -1397,7 +1397,7 @@
       "vsz_kb": 120772
     },
     {
-      "Cpu Utilizado": "579000000",
+      "Cpu Utilizado": "583000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "upowerd",
       "name": "upowerd",
@@ -1447,7 +1447,7 @@
       "cmdline": "gdm3",
       "name": "gdm3",
       "pid": 1434,
-      "rss_kb": 8704,
+      "rss_kb": 8064,
       "vsz_kb": 244004
     },
     {
@@ -1460,12 +1460,12 @@
       "vsz_kb": 154004
     },
     {
-      "Cpu Utilizado": "3157000000",
+      "Cpu Utilizado": "3214000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "geoclue",
       "name": "geoclue",
       "pid": 1576,
-      "rss_kb": 24800,
+      "rss_kb": 23136,
       "vsz_kb": 783792
     },
     {
@@ -1474,7 +1474,7 @@
       "cmdline": "packagekitd",
       "name": "packagekitd",
       "pid": 1577,
-      "rss_kb": 39124,
+      "rss_kb": 34772,
       "vsz_kb": 375800
     },
     {
@@ -1496,7 +1496,7 @@
       "vsz_kb": 173516
     },
     {
-      "Cpu Utilizado": "1753000000",
+      "Cpu Utilizado": "1757000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "systemd",
       "name": "systemd",
@@ -1514,7 +1514,7 @@
       "vsz_kb": 104576
     },
     {
-      "Cpu Utilizado": "68000000",
+      "Cpu Utilizado": "71000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "pipewire",
       "name": "pipewire",
@@ -1523,7 +1523,7 @@
       "vsz_kb": 42468
     },
     {
-      "Cpu Utilizado": "54000000",
+      "Cpu Utilizado": "56000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "pipewire-media-",
       "name": "pipewire-media-",
@@ -1537,20 +1537,20 @@
       "cmdline": "pulseaudio",
       "name": "pulseaudio",
       "pid": 1826,
-      "rss_kb": 24832,
+      "rss_kb": 24192,
       "vsz_kb": 1911328
     },
     {
-      "Cpu Utilizado": "67000000",
+      "Cpu Utilizado": "68000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "gnome-keyring-d",
       "name": "gnome-keyring-d",
       "pid": 1835,
-      "rss_kb": 7576,
+      "rss_kb": 7192,
       "vsz_kb": 243748
     },
     {
-      "Cpu Utilizado": "3240000000",
+      "Cpu Utilizado": "3249000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "dbus-daemon",
       "name": "dbus-daemon",
@@ -1645,7 +1645,7 @@
       "cmdline": "gnome-session-b",
       "name": "gnome-session-b",
       "pid": 1962,
-      "rss_kb": 16512,
+      "rss_kb": 16128,
       "vsz_kb": 522784
     },
     {
@@ -1667,13 +1667,13 @@
       "vsz_kb": 8564
     },
     {
-      "Cpu Utilizado": "625899000000",
+      "Cpu Utilizado": "637196000000",
       "Memoria Utilizada": "2 %",
       "cmdline": "gnome-shell",
       "name": "gnome-shell",
       "pid": 1991,
-      "rss_kb": 196508,
-      "vsz_kb": 5876164
+      "rss_kb": 174748,
+      "vsz_kb": 5876112
     },
     {
       "Cpu Utilizado": "30000000",
@@ -1717,11 +1717,11 @@
       "cmdline": "evolution-calen",
       "name": "evolution-calen",
       "pid": 2049,
-      "rss_kb": 28800,
+      "rss_kb": 28160,
       "vsz_kb": 1122092
     },
     {
-      "Cpu Utilizado": "10605000000",
+      "Cpu Utilizado": "10641000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "gvfs-udisks2-vo",
       "name": "gvfs-udisks2-vo",
@@ -1762,7 +1762,7 @@
       "cmdline": "evolution-addre",
       "name": "evolution-addre",
       "pid": 2087,
-      "rss_kb": 27520,
+      "rss_kb": 27136,
       "vsz_kb": 749180
     },
     {
@@ -1807,7 +1807,7 @@
       "cmdline": "at-spi2-registr",
       "name": "at-spi2-registr",
       "pid": 2120,
-      "rss_kb": 7424,
+      "rss_kb": 7168,
       "vsz_kb": 162688
     },
     {
@@ -1834,7 +1834,7 @@
       "cmdline": "gsd-color",
       "name": "gsd-color",
       "pid": 2139,
-      "rss_kb": 26500,
+      "rss_kb": 25092,
       "vsz_kb": 551272
     },
     {
@@ -1843,11 +1843,11 @@
       "cmdline": "gsd-datetime",
       "name": "gsd-datetime",
       "pid": 2142,
-      "rss_kb": 16128,
+      "rss_kb": 15872,
       "vsz_kb": 378460
     },
     {
-      "Cpu Utilizado": "4166000000",
+      "Cpu Utilizado": "4195000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "gsd-housekeepin",
       "name": "gsd-housekeepin",
@@ -1861,16 +1861,16 @@
       "cmdline": "gsd-keyboard",
       "name": "gsd-keyboard",
       "pid": 2146,
-      "rss_kb": 22272,
+      "rss_kb": 20864,
       "vsz_kb": 344016
     },
     {
-      "Cpu Utilizado": "1661000000",
+      "Cpu Utilizado": "1670000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "ibus-daemon",
       "name": "ibus-daemon",
       "pid": 2147,
-      "rss_kb": 10780,
+      "rss_kb": 8988,
       "vsz_kb": 391992
     },
     {
@@ -1879,7 +1879,7 @@
       "cmdline": "gsd-media-keys",
       "name": "gsd-media-keys",
       "pid": 2149,
-      "rss_kb": 26368,
+      "rss_kb": 25344,
       "vsz_kb": 867720
     },
     {
@@ -1888,7 +1888,7 @@
       "cmdline": "gsd-power",
       "name": "gsd-power",
       "pid": 2151,
-      "rss_kb": 25860,
+      "rss_kb": 24068,
       "vsz_kb": 527684
     },
     {
@@ -1897,7 +1897,7 @@
       "cmdline": "gsd-print-notif",
       "name": "gsd-print-notif",
       "pid": 2154,
-      "rss_kb": 10880,
+      "rss_kb": 10624,
       "vsz_kb": 252712
     },
     {
@@ -1919,12 +1919,12 @@
       "vsz_kb": 239144
     },
     {
-      "Cpu Utilizado": "514000000",
+      "Cpu Utilizado": "519000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "gsd-sharing",
       "name": "gsd-sharing",
       "pid": 2157,
-      "rss_kb": 10496,
+      "rss_kb": 10368,
       "vsz_kb": 469196
     },
     {
@@ -1951,7 +1951,7 @@
       "cmdline": "gsd-wacom",
       "name": "gsd-wacom",
       "pid": 2170,
-      "rss_kb": 22528,
+      "rss_kb": 21248,
       "vsz_kb": 418340
     },
     {
@@ -1969,7 +1969,7 @@
       "cmdline": "evolution-alarm",
       "name": "evolution-alarm",
       "pid": 2231,
-      "rss_kb": 61312,
+      "rss_kb": 57728,
       "vsz_kb": 826276
     },
     {
@@ -1982,12 +1982,12 @@
       "vsz_kb": 166416
     },
     {
-      "Cpu Utilizado": "1302000000",
+      "Cpu Utilizado": "1303000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "ibus-extension-",
       "name": "ibus-extension-",
       "pid": 2251,
-      "rss_kb": 28304,
+      "rss_kb": 26896,
       "vsz_kb": 351196
     },
     {
@@ -2005,7 +2005,7 @@
       "cmdline": "snap-store",
       "name": "snap-store",
       "pid": 2266,
-      "rss_kb": 130492,
+      "rss_kb": 116028,
       "vsz_kb": 931664
     },
     {
@@ -2023,7 +2023,7 @@
       "cmdline": "ibus-engine-sim",
       "name": "ibus-engine-sim",
       "pid": 2317,
-      "rss_kb": 7552,
+      "rss_kb": 7424,
       "vsz_kb": 166408
     },
     {
@@ -2032,11 +2032,11 @@
       "cmdline": "tracker-miner-f",
       "name": "tracker-miner-f",
       "pid": 2341,
-      "rss_kb": 33608,
+      "rss_kb": 33352,
       "vsz_kb": 798620
     },
     {
-      "Cpu Utilizado": "164000000",
+      "Cpu Utilizado": "165000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "xdg-desktop-por",
       "name": "xdg-desktop-por",
@@ -2045,7 +2045,7 @@
       "vsz_kb": 626732
     },
     {
-      "Cpu Utilizado": "26471000000",
+      "Cpu Utilizado": "26878000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "xdg-desktop-por",
       "name": "xdg-desktop-por",
@@ -2068,7 +2068,7 @@
       "cmdline": "snapd-desktop-i",
       "name": "snapd-desktop-i",
       "pid": 2456,
-      "rss_kb": 8960,
+      "rss_kb": 8832,
       "vsz_kb": 76288
     },
     {
@@ -2077,7 +2077,7 @@
       "cmdline": "xdg-desktop-por",
       "name": "xdg-desktop-por",
       "pid": 2464,
-      "rss_kb": 24964,
+      "rss_kb": 22916,
       "vsz_kb": 347852
     },
     {
@@ -2086,16 +2086,16 @@
       "cmdline": "snapd-desktop-i",
       "name": "snapd-desktop-i",
       "pid": 2515,
-      "rss_kb": 17220,
+      "rss_kb": 16964,
       "vsz_kb": 306664
     },
     {
-      "Cpu Utilizado": "5764000000",
+      "Cpu Utilizado": "5862000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "gjs",
       "name": "gjs",
       "pid": 2560,
-      "rss_kb": 66712,
+      "rss_kb": 65160,
       "vsz_kb": 3204476
     },
     {
@@ -2135,12 +2135,12 @@
       "vsz_kb": 3372
     },
     {
-      "Cpu Utilizado": "178530000000",
+      "Cpu Utilizado": "179600000000",
       "Memoria Utilizada": "4 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 3304,
-      "rss_kb": 354436,
+      "rss_kb": 353904,
       "vsz_kb": 34300352
     },
     {
@@ -2167,7 +2167,7 @@
       "cmdline": "brave",
       "name": "brave",
       "pid": 3314,
-      "rss_kb": 54016,
+      "rss_kb": 53888,
       "vsz_kb": 33964556
     },
     {
@@ -2180,7 +2180,7 @@
       "vsz_kb": 33964544
     },
     {
-      "Cpu Utilizado": "618000000",
+      "Cpu Utilizado": "623000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "brave",
       "name": "brave",
@@ -2189,21 +2189,21 @@
       "vsz_kb": 33964572
     },
     {
-      "Cpu Utilizado": "125442000000",
+      "Cpu Utilizado": "128901000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "Xwayland",
       "name": "Xwayland",
       "pid": 3344,
-      "rss_kb": 70084,
-      "vsz_kb": 975204
+      "rss_kb": 44484,
+      "vsz_kb": 973336
     },
     {
-      "Cpu Utilizado": "242000000",
+      "Cpu Utilizado": "243000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "gsd-xsettings",
       "name": "gsd-xsettings",
       "pid": 3421,
-      "rss_kb": 42504,
+      "rss_kb": 36616,
       "vsz_kb": 1052144
     },
     {
@@ -2216,13 +2216,13 @@
       "vsz_kb": 197560
     },
     {
-      "Cpu Utilizado": "71385000000",
+      "Cpu Utilizado": "74391000000",
       "Memoria Utilizada": "2 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3491,
-      "rss_kb": 181472,
-      "vsz_kb": 1187077732
+      "rss_kb": 185268,
+      "vsz_kb": 1187079780
     },
     {
       "Cpu Utilizado": "21000000",
@@ -2243,21 +2243,21 @@
       "vsz_kb": 34048216
     },
     {
-      "Cpu Utilizado": "330059000000",
+      "Cpu Utilizado": "331465000000",
       "Memoria Utilizada": "2 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 3547,
-      "rss_kb": 208212,
-      "vsz_kb": 34492208
+      "rss_kb": 207952,
+      "vsz_kb": 34484656
     },
     {
-      "Cpu Utilizado": "7139000000",
+      "Cpu Utilizado": "7225000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 3550,
-      "rss_kb": 113556,
+      "rss_kb": 113760,
       "vsz_kb": 33995492
     },
     {
@@ -2270,7 +2270,7 @@
       "vsz_kb": 33601268
     },
     {
-      "Cpu Utilizado": "3346000000",
+      "Cpu Utilizado": "3370000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "brave",
       "name": "brave",
@@ -2279,16 +2279,16 @@
       "vsz_kb": 34023816
     },
     {
-      "Cpu Utilizado": "70259000000",
+      "Cpu Utilizado": "70435000000",
       "Memoria Utilizada": "4 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 3581,
-      "rss_kb": 339556,
+      "rss_kb": 340276,
       "vsz_kb": 1214207388
     },
     {
-      "Cpu Utilizado": "399000000",
+      "Cpu Utilizado": "400000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "brave",
       "name": "brave",
@@ -2297,21 +2297,21 @@
       "vsz_kb": 1212223256
     },
     {
-      "Cpu Utilizado": "1717000000",
+      "Cpu Utilizado": "1728000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3636,
-      "rss_kb": 60836,
+      "rss_kb": 60960,
       "vsz_kb": 33860964
     },
     {
-      "Cpu Utilizado": "721169000000",
+      "Cpu Utilizado": "721185000000",
       "Memoria Utilizada": "2 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 3649,
-      "rss_kb": 216592,
+      "rss_kb": 216720,
       "vsz_kb": 1212270284
     },
     {
@@ -2324,57 +2324,57 @@
       "vsz_kb": 1682436
     },
     {
-      "Cpu Utilizado": "354822000000",
+      "Cpu Utilizado": "387193000000",
       "Memoria Utilizada": "4 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3757,
-      "rss_kb": 344556,
-      "vsz_kb": 1191563964
+      "rss_kb": 373700,
+      "vsz_kb": 1191577004
     },
     {
-      "Cpu Utilizado": "2267000000",
+      "Cpu Utilizado": "2402000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3789,
-      "rss_kb": 98208,
-      "vsz_kb": 33968644
+      "rss_kb": 107796,
+      "vsz_kb": 33981588
     },
     {
-      "Cpu Utilizado": "44001000000",
+      "Cpu Utilizado": "45926000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3821,
-      "rss_kb": 97712,
+      "rss_kb": 98420,
       "vsz_kb": 1186907564
     },
     {
-      "Cpu Utilizado": "26489000000",
+      "Cpu Utilizado": "28811000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3832,
-      "rss_kb": 149432,
+      "rss_kb": 148716,
       "vsz_kb": 1186887056
     },
     {
-      "Cpu Utilizado": "4822000000",
+      "Cpu Utilizado": "4869000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3843,
-      "rss_kb": 94912,
+      "rss_kb": 94192,
       "vsz_kb": 1186885216
     },
     {
-      "Cpu Utilizado": "2410000000",
+      "Cpu Utilizado": "2452000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "code",
       "name": "code",
       "pid": 3848,
-      "rss_kb": 85412,
+      "rss_kb": 85524,
       "vsz_kb": 1186902120
     },
     {
@@ -2387,7 +2387,7 @@
       "vsz_kb": 1212223456
     },
     {
-      "Cpu Utilizado": "132961000000",
+      "Cpu Utilizado": "132962000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "brave",
       "name": "brave",
@@ -2419,11 +2419,11 @@
       "cmdline": "update-notifier",
       "name": "update-notifier",
       "pid": 4275,
-      "rss_kb": 28932,
+      "rss_kb": 27012,
       "vsz_kb": 496948
     },
     {
-      "Cpu Utilizado": "147968000000",
+      "Cpu Utilizado": "150076000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "gedit",
       "name": "gedit",
@@ -2459,7 +2459,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "416000000",
+      "Cpu Utilizado": "420000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2495,7 +2495,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "28290160000000",
+      "Cpu Utilizado": "28588105000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -2513,7 +2513,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "448000000",
+      "Cpu Utilizado": "458000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2549,7 +2549,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "28194425000000",
+      "Cpu Utilizado": "28484879000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -2567,7 +2567,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "412000000",
+      "Cpu Utilizado": "421000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2581,11 +2581,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 6817,
-      "rss_kb": 13900,
+      "rss_kb": 13772,
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "497000000",
+      "Cpu Utilizado": "502000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2603,7 +2603,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "475000000",
+      "Cpu Utilizado": "478000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2621,7 +2621,7 @@
       "vsz_kb": 1238424
     },
     {
-      "Cpu Utilizado": "494000000",
+      "Cpu Utilizado": "501000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2639,7 +2639,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "451000000",
+      "Cpu Utilizado": "457000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2657,7 +2657,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "446000000",
+      "Cpu Utilizado": "450000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2711,7 +2711,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "27457959000000",
+      "Cpu Utilizado": "27754627000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -2725,11 +2725,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 8868,
-      "rss_kb": 14024,
+      "rss_kb": 14152,
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "467000000",
+      "Cpu Utilizado": "475000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2743,11 +2743,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 8939,
-      "rss_kb": 13864,
+      "rss_kb": 13992,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "497000000",
+      "Cpu Utilizado": "503000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2765,7 +2765,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "490000000",
+      "Cpu Utilizado": "491000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2783,7 +2783,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "432000000",
+      "Cpu Utilizado": "436000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2797,7 +2797,7 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 9158,
-      "rss_kb": 13908,
+      "rss_kb": 13752,
       "vsz_kb": 1237912
     },
     {
@@ -2819,7 +2819,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "27469690000000",
+      "Cpu Utilizado": "27767696000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -2833,11 +2833,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 9231,
-      "rss_kb": 13616,
+      "rss_kb": 13744,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "443000000",
+      "Cpu Utilizado": "446000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2855,7 +2855,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "446000000",
+      "Cpu Utilizado": "449000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2873,7 +2873,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "420000000",
+      "Cpu Utilizado": "427000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2909,7 +2909,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "27393154000000",
+      "Cpu Utilizado": "27690220000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -2927,7 +2927,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "454000000",
+      "Cpu Utilizado": "457000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2945,7 +2945,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "513000000",
+      "Cpu Utilizado": "518000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2963,7 +2963,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "432000000",
+      "Cpu Utilizado": "437000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2981,7 +2981,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "464000000",
+      "Cpu Utilizado": "470000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -2999,7 +2999,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "376000000",
+      "Cpu Utilizado": "379000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3017,7 +3017,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "535000000",
+      "Cpu Utilizado": "538000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3035,7 +3035,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "448000000",
+      "Cpu Utilizado": "453000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3053,7 +3053,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "451000000",
+      "Cpu Utilizado": "462000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3067,11 +3067,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 11001,
-      "rss_kb": 13904,
+      "rss_kb": 13748,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "469000000",
+      "Cpu Utilizado": "474000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3085,11 +3085,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 11089,
-      "rss_kb": 14136,
+      "rss_kb": 14108,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "559000000",
+      "Cpu Utilizado": "563000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3103,11 +3103,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 11964,
-      "rss_kb": 14004,
+      "rss_kb": 13992,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "550000000",
+      "Cpu Utilizado": "555000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3125,7 +3125,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "469000000",
+      "Cpu Utilizado": "474000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3161,7 +3161,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "26275609000000",
+      "Cpu Utilizado": "26574991000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -3179,7 +3179,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "464000000",
+      "Cpu Utilizado": "468000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3193,7 +3193,7 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 12275,
-      "rss_kb": 13660,
+      "rss_kb": 13788,
       "vsz_kb": 1238168
     },
     {
@@ -3215,7 +3215,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "26310701000000",
+      "Cpu Utilizado": "26599512000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -3233,7 +3233,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "423000000",
+      "Cpu Utilizado": "430000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3269,7 +3269,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "26307994000000",
+      "Cpu Utilizado": "26598286000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -3287,7 +3287,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "411000000",
+      "Cpu Utilizado": "414000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3301,11 +3301,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 12565,
-      "rss_kb": 14004,
+      "rss_kb": 14132,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "403000000",
+      "Cpu Utilizado": "410000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3323,7 +3323,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "478000000",
+      "Cpu Utilizado": "483000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3337,11 +3337,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 13357,
-      "rss_kb": 13860,
+      "rss_kb": 13732,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "505000000",
+      "Cpu Utilizado": "510000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3355,11 +3355,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 13455,
-      "rss_kb": 13784,
+      "rss_kb": 13912,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "477000000",
+      "Cpu Utilizado": "482000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3373,7 +3373,7 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 13525,
-      "rss_kb": 14076,
+      "rss_kb": 13920,
       "vsz_kb": 1237912
     },
     {
@@ -3395,7 +3395,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "26034075000000",
+      "Cpu Utilizado": "26327512000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -3409,11 +3409,11 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 13606,
-      "rss_kb": 13644,
+      "rss_kb": 13772,
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "489000000",
+      "Cpu Utilizado": "491000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3431,7 +3431,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "456000000",
+      "Cpu Utilizado": "460000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3449,7 +3449,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "461000000",
+      "Cpu Utilizado": "466000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3467,7 +3467,7 @@
       "vsz_kb": 1237912
     },
     {
-      "Cpu Utilizado": "442000000",
+      "Cpu Utilizado": "445000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3485,7 +3485,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "465000000",
+      "Cpu Utilizado": "468000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3503,7 +3503,7 @@
       "vsz_kb": 1238168
     },
     {
-      "Cpu Utilizado": "504000000",
+      "Cpu Utilizado": "509000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "tail",
       "name": "tail",
@@ -3517,7 +3517,7 @@
       "cmdline": "containerd-shim",
       "name": "containerd-shim",
       "pid": 14056,
-      "rss_kb": 14264,
+      "rss_kb": 14392,
       "vsz_kb": 1238168
     },
     {
@@ -3539,7 +3539,7 @@
       "vsz_kb": 3620
     },
     {
-      "Cpu Utilizado": "26055906000000",
+      "Cpu Utilizado": "26345926000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "stress",
       "name": "stress",
@@ -3557,7 +3557,7 @@
       "vsz_kb": 46960
     },
     {
-      "Cpu Utilizado": "3786000000",
+      "Cpu Utilizado": "3800000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "brave",
       "name": "brave",
@@ -3575,7 +3575,7 @@
       "vsz_kb": 1212223456
     },
     {
-      "Cpu Utilizado": "795000000",
+      "Cpu Utilizado": "797000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "brave",
       "name": "brave",
@@ -3584,7 +3584,7 @@
       "vsz_kb": 1214124960
     },
     {
-      "Cpu Utilizado": "341000000",
+      "Cpu Utilizado": "365000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "bash",
       "name": "bash",
@@ -3593,7 +3593,7 @@
       "vsz_kb": 8992
     },
     {
-      "Cpu Utilizado": "24000000",
+      "Cpu Utilizado": "26000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/5:2",
@@ -3620,16 +3620,7 @@
       "vsz_kb": 470528
     },
     {
-      "Cpu Utilizado": "798000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/3:1",
-      "pid": 22435,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "15000000",
+      "Cpu Utilizado": "17000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/6:1",
@@ -3656,25 +3647,16 @@
       "vsz_kb": 318164
     },
     {
-      "Cpu Utilizado": "520000000",
+      "Cpu Utilizado": "662000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "code",
       "name": "code",
       "pid": 24600,
-      "rss_kb": 86600,
+      "rss_kb": 89584,
       "vsz_kb": 1186817960
     },
     {
-      "Cpu Utilizado": "1000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/4:1",
-      "pid": 24609,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "21000000",
+      "Cpu Utilizado": "24000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/1:1",
@@ -3683,16 +3665,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "1412000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/u17:3",
-      "pid": 24942,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "577000000",
+      "Cpu Utilizado": "717000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/u16:4",
@@ -3701,7 +3674,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "6492000000",
+      "Cpu Utilizado": "6493000000",
       "Memoria Utilizada": "1 %",
       "cmdline": "brave",
       "name": "brave",
@@ -3710,7 +3683,7 @@
       "vsz_kb": 1212244820
     },
     {
-      "Cpu Utilizado": "1138000000",
+      "Cpu Utilizado": "1255000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/3:0",
@@ -3719,16 +3692,16 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "31844000000",
+      "Cpu Utilizado": "31869000000",
       "Memoria Utilizada": "2 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 25110,
-      "rss_kb": 211732,
+      "rss_kb": 211968,
       "vsz_kb": 1212253876
     },
     {
-      "Cpu Utilizado": "7070000000",
+      "Cpu Utilizado": "7078000000",
       "Memoria Utilizada": "2 %",
       "cmdline": "brave",
       "name": "brave",
@@ -3746,7 +3719,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "16000000",
+      "Cpu Utilizado": "17000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/7:0",
@@ -3764,34 +3737,16 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "37000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/0:2",
-      "pid": 26957,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "16368000000",
+      "Cpu Utilizado": "23125000000",
       "Memoria Utilizada": "3 %",
       "cmdline": "brave",
       "name": "brave",
       "pid": 27610,
-      "rss_kb": 238084,
+      "rss_kb": 252040,
       "vsz_kb": 1212250316
     },
     {
-      "Cpu Utilizado": "34000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "brave",
-      "name": "brave",
-      "pid": 28665,
-      "rss_kb": 62332,
-      "vsz_kb": 1212182272
-    },
-    {
-      "Cpu Utilizado": "501000000",
+      "Cpu Utilizado": "775000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/u17:0",
@@ -3800,16 +3755,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "153000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/u16:2",
-      "pid": 28830,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "32000000",
+      "Cpu Utilizado": "110000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/u16:3",
@@ -3823,15 +3769,6 @@
       "cmdline": "N/A",
       "name": "kworker/5:1",
       "pid": 28989,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "0",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/7:2",
-      "pid": 29017,
       "rss_kb": 0,
       "vsz_kb": 0
     },
@@ -3854,29 +3791,11 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "0",
+      "Cpu Utilizado": "4000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/0:1",
       "pid": 29036,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "1000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/1:0",
-      "pid": 29039,
-      "rss_kb": 0,
-      "vsz_kb": 0
-    },
-    {
-      "Cpu Utilizado": "25000000",
-      "Memoria Utilizada": "0 %",
-      "cmdline": "N/A",
-      "name": "kworker/u16:0",
-      "pid": 29044,
       "rss_kb": 0,
       "vsz_kb": 0
     },
@@ -3917,7 +3836,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "0",
+      "Cpu Utilizado": "2000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/2:1",
@@ -3926,7 +3845,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "40000000",
+      "Cpu Utilizado": "210000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "N/A",
       "name": "kworker/u17:2",
@@ -3935,7 +3854,7 @@
       "vsz_kb": 0
     },
     {
-      "Cpu Utilizado": "26000000",
+      "Cpu Utilizado": "27000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "bash",
       "name": "bash",
@@ -3944,15 +3863,123 @@
       "vsz_kb": 8860
     },
     {
-      "Cpu Utilizado": "105000000",
+      "Cpu Utilizado": "0",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/4:0",
+      "pid": 29443,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "1000000",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/7:1",
+      "pid": 29481,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "28000000",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "brave",
+      "name": "brave",
+      "pid": 29523,
+      "rss_kb": 62300,
+      "vsz_kb": 1212182272
+    },
+    {
+      "Cpu Utilizado": "85000000",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/u16:1",
+      "pid": 29617,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "0",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/5:0",
+      "pid": 29903,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "0",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/1:0",
+      "pid": 30265,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "104000000",
       "Memoria Utilizada": "0 %",
       "cmdline": "contenedores_se",
       "name": "contenedores_se",
-      "pid": 29356,
+      "pid": 30385,
       "rss_kb": 1920,
+      "vsz_kb": 3604
+    }
+  ],
+  "total_memory_kb": 7934088,
+  "used_memory_kb": 7227024
+}mdline": "N/A",
+      "name": "kworker/4:0",
+      "pid": 29443,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "0",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/7:1",
+      "pid": 29481,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "27000000",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "brave",
+      "name": "brave",
+      "pid": 29523,
+      "rss_kb": 62300,
+      "vsz_kb": 1212182272
+    },
+    {
+      "Cpu Utilizado": "29000000",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/u16:1",
+      "pid": 29617,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "0",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "N/A",
+      "name": "kworker/5:0",
+      "pid": 29903,
+      "rss_kb": 0,
+      "vsz_kb": 0
+    },
+    {
+      "Cpu Utilizado": "108000000",
+      "Memoria Utilizada": "0 %",
+      "cmdline": "contenedores_se",
+      "name": "contenedores_se",
+      "pid": 30213,
+      "rss_kb": 2048,
       "vsz_kb": 3600
     }
   ],
   "total_memory_kb": 7934088,
-  "used_memory_kb": 7595152
+  "used_memory_kb": 7122268
 }

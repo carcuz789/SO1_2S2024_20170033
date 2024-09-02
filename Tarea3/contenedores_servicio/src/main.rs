@@ -16,10 +16,20 @@ fn main() -> io::Result<()> {
 
     let processes = json_value["processes"].as_array().unwrap();
 
+    let stress_processes: Vec<&Value> = processes
+        .into_iter()
+        .filter(|process| process["name"].as_str().unwrap_or("") == "stress")
+        .collect();
+
+    println!("Procesos de stress:");
+    for process in &stress_processes {
+        println!("{}", serde_json::to_string_pretty(process).unwrap());
+    }
+
     let mut contenedores_alto_consumo: Vec<&Value> = Vec::new();
     let mut contenedores_bajo_consumo: Vec<&Value> = Vec::new();
 
-    for process in processes {
+    for process in &stress_processes {
         if let (Some(cpu), Some(ram)) = (process.get("Cpu Utilizado"), process.get("Memoria Utilizada")) {
             let cpu_usage: f64 = cpu.as_str().unwrap_or("0").replace(" %", "").parse().unwrap_or(0.0);
             let ram_usage: f64 = ram.as_str().unwrap_or("0").replace(" %", "").parse().unwrap_or(0.0);
@@ -52,7 +62,7 @@ fn main() -> io::Result<()> {
     let mut output_file = OpenOptions::new().write(true).create(true).open(output_path)?;
     write!(output_file, "{}", serde_json::to_string_pretty(&corrected_json)?)?;
 
-    //println!("Archivo JSON corregido guardado en: {}", output_path);
+    println!("Archivo JSON corregido guardado en: {}", output_path);
 
     Ok(())
 }
