@@ -37,7 +37,16 @@ static const struct modversion_info ____versions[]
 __used __section("__versions") = {
 	{ 0x6d26b3a7, "seq_printf" },
 	{ 0x441c5e2e, "init_task" },
-	{ 0x656e4a6e, "snprintf" },
+	{ 0xe2d5255a, "strcmp" },
+	{ 0x4c03a563, "random_kmalloc_seed" },
+	{ 0xf2999cd4, "kmalloc_caches" },
+	{ 0x4524dc3a, "kmalloc_trace" },
+	{ 0xd0df9f72, "get_task_mm" },
+	{ 0x668b19a1, "down_read" },
+	{ 0x53b954a2, "up_read" },
+	{ 0x91cb5be4, "access_process_vm" },
+	{ 0x5c1531ec, "mmput" },
+	{ 0x37a0cba, "kfree" },
 	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0x737c5c97, "proc_remove" },
 	{ 0x2fa57770, "seq_read" },
@@ -55,4 +64,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "8E7553BCF40CE00D39ED8BB");
+MODULE_INFO(srcversion, "8CF3F93219818157D3D0D59");
