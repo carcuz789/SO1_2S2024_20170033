@@ -37,12 +37,14 @@ async def generate_graphs():
     cpu_usages = [log.get('cpu_usage', 0) for log in logs]
     memory_usages = [log.get('memory_usage', 0) for log in logs]
     process_names = [log.get('name', 'Unknown') for log in logs]
+    vsz_kb = [log.get('vsz_kb', 0) for log in logs]
+    rss_kb = [log.get('rss_kb', 0) for log in logs]
 
     # Crear gráficos
     plt.figure(figsize=(10, 5))
 
     # Gráfico de uso de CPU
-    plt.subplot(1, 2, 1)
+    plt.subplot(2, 2, 1)
     plt.bar(process_names, cpu_usages, color='b')
     plt.xlabel('Procesos')
     plt.ylabel('Uso de CPU (%)')
@@ -50,12 +52,31 @@ async def generate_graphs():
     plt.xticks(rotation=45)
 
     # Gráfico de uso de Memoria
-    plt.subplot(1, 2, 2)
+    plt.subplot(2, 2, 2)
     plt.bar(process_names, memory_usages, color='r')
     plt.xlabel('Procesos')
     plt.ylabel('Uso de Memoria (MB)')
     plt.title('Uso de Memoria por Proceso')
     plt.xticks(rotation=45)
+
+    
+    # Gráfico de uso de VSZ en KB (como línea)
+    plt.subplot(2, 2, 3)
+    plt.plot(process_names, vsz_kb, marker='o', linestyle='-', color='g')
+    plt.xlabel('Procesos')
+    plt.ylabel('Uso de VSZ (KB)')
+    plt.title('Uso de VSZ KB por Proceso')
+    plt.xticks(rotation=45)
+
+    # Gráfico de uso de RSS en KB (como línea)
+    plt.subplot(2, 2, 4)
+    plt.plot(process_names, rss_kb, marker='o', linestyle='-', color='m')
+    plt.xlabel('Procesos')
+    plt.ylabel('Uso de RSS (KB)')
+    plt.title('Uso de RSS KB por Proceso')
+    plt.xticks(rotation=45)
+
+
 
     # Guardar gráfico como archivo
     plt.tight_layout()
