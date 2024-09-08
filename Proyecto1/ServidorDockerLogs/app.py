@@ -58,7 +58,6 @@ async def generate_graphs():
     plt.ylabel('Uso de Memoria (MB)')
     plt.title('Uso de Memoria por Proceso')
     plt.xticks(rotation=45)
-
     
     # Gráfico de uso de VSZ en KB (como línea)
     plt.subplot(2, 2, 3)
@@ -75,7 +74,6 @@ async def generate_graphs():
     plt.ylabel('Uso de RSS (KB)')
     plt.title('Uso de RSS KB por Proceso')
     plt.xticks(rotation=45)
-
 
 
     # Guardar gráfico como archivo
