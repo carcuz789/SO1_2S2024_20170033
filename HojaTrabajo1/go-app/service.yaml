@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: go-app
+  ports:
+    - protocol: TCP
+      port: 80  # Este es el puerto al que se accederá externamente
+      targetPort: 8080  # El puerto donde escucha tu aplicación dentro del contenedor
