@@ -1,0 +1,38 @@
+# Configuración general del proyecto
+project:
+  name: olimpiadas_usac
+  environment: production
+
+# Configuración de los servicios de facultades y disciplinas
+services:
+  faculty_service:
+    host: "faculty-service"
+    port: 8080
+  swimming_service:
+    host: "swimming-service"
+    port: 8081
+  boxing_service:
+    host: "boxing-service"
+    port: 8083
+  track_service:
+    host: "track-service"
+    port: 8082
+
+# Configuración de Kafka
+kafka:
+  broker: "kafka-cluster-kafka-bootstrap.kafka.svc.cluster.local:9092"
+  topics:
+    winners: "winners"
+    losers: "losers"
+
+# Configuración de Redis
+redis:
+  host: "redis"
+  port: 6379
+
+# Configuración de Grafana y Prometheus
+monitoring:
+  grafana:
+    url: "http://grafana:3000"
+  prometheus:
+    url: "http://prometheus:9090"
