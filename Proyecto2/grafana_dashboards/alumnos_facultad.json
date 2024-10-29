@@ -1,0 +1,22 @@
+{
+    "title": "Conteo de Alumnos por Facultad",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Alumnos por Facultad",
+        "targets": [
+          {
+            "expr": "sum by (faculty) (redis_key_value{key=~\"faculty:.*\"})",
+            "legendFormat": "{{faculty}}",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "none"
+          }
+        }
+      }
+    ]
+  }
+  

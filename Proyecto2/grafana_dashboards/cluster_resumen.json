@@ -1,0 +1,51 @@
+{
+    "title": "Resumen del Cluster",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Nodos en el Cluster",
+        "targets": [
+          {
+            "expr": "count(kube_node_info)",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "none"
+          }
+        }
+      },
+      {
+        "type": "stat",
+        "title": "Número de Pods",
+        "targets": [
+          {
+            "expr": "count(kube_pod_info)",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "none"
+          }
+        }
+      },
+      {
+        "type": "stat",
+        "title": "Servicios en el Cluster",
+        "targets": [
+          {
+            "expr": "count(kube_service_info)",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "none"
+          }
+        }
+      }
+    ]
+  }
+  

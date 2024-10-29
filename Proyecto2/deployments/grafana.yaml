@@ -19,16 +19,228 @@ spec:
         image: grafana/grafana:latest
         ports:
         - containerPort: 3000
+        env:
+        - name: GF_SECURITY_ADMIN_USER
+          value: "admin"
+        - name: GF_SECURITY_ADMIN_PASSWORD
+          value: "admin"
+        - name: GF_PATHS_PROVISIONING
+          value: "/var/lib/grafana/dashboards"
+        volumeMounts:
+        - name: grafana-dashboards
+          mountPath: /var/lib/grafana/dashboards
+      volumes:
+      - name: grafana-dashboards
+        configMap:
+          name: grafana-dashboards-config
 ---
 apiVersion: v1
-kind: Service
+kind: ConfigMap
 metadata:
-  name: grafana
-spec:
-  selector:
-    app: grafana
-  ports:
-  - protocol: TCP
-    port: 3000
-    targetPort: 3000
-  type: LoadBalancer
+  name: grafana-dashboards-config
+data:
+  alumnos_facultad.json: |
+    {
+      "title": "Conteo de Alumnos por Facultad",
+      "panels": [
+        {
+          "type": "stat",
+          "title": "Alumnos por Facultad",
+          "targets": [
+            {
+              "expr": "sum by (faculty) (redis_key_value{key=~\"faculty:.*\"})",
+              "legendFormat": "{{faculty}}",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        }
+      ]
+    }
+  disciplinas_ganadores.json: |
+    {
+      "title": "Conteo de Ganadores por Disciplina",
+      "panels": [
+        {
+          "type": "stat",
+          "title": "Ganadores por Disciplina",
+          "targets": [
+            {
+              "expr": "sum by (discipline) (redis_key_value{key=~\"winner:.*\"})",
+              "legendFormat": "{{discipline}}",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        }
+      ]
+    }
+  perdedores_facultad.json: |
+    {
+      "title": "Conteo de Alumnos que Perdieron por Facultad",
+      "panels": [
+        {
+          "type": "stat",
+          "title": "Perdedores por Facultad",
+          "targets": [
+            {
+              "expr": "sum by (faculty) (redis_key_value{key=~\"loser:.*\"})",
+              "legendFormat": "{{faculty}}",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        }
+      ]
+    }
+  cluster_resumen.json: |
+    {
+      "title": "Resumen del Cluster",
+      "panels": [
+        {
+          "type": "stat",
+          "title": "Nodos en el Cluster",
+          "targets": [
+            {
+              "expr": "count(kube_node_info)",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        },
+        {
+          "type": "stat",
+          "title": "Número de Pods",
+          "targets": [
+            {
+              "expr": "count(kube_pod_info)",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        },
+        {
+          "type": "stat",
+          "title": "Servicios en el Cluster",
+          "targets": [
+            {
+              "expr": "count(kube_service_info)",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        }
+      ]
+    }
+  rendimiento_aplicaciones.json: |
+    {
+      "title": "Rendimiento de Aplicaciones",
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Peticiones HTTP",
+          "targets": [
+            {
+              "expr": "rate(http_requests_total[5m])",
+              "legendFormat": "{{handler}}",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "requests/sec"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Latencia de Peticiones HTTP",
+          "targets": [
+            {
+              "expr": "rate(http_request_duration_seconds_sum[5m]) / rate(http_request_duration_seconds_count[5m])",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "s"
+            }
+          }
+        }
+      ]
+    }
+  recursos_sistema.json: |
+    {
+      "title": "Recursos del Sistema",
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Uso de CPU",
+          "targets": [
+            {
+              "expr": "rate(container_cpu_usage_seconds_total[5m])",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "cores"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Uso de Memoria",
+          "targets": [
+            {
+              "expr": "container_memory_usage_bytes",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "bytes"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Uso de Disco",
+          "targets": [
+            {
+              "expr": "container_fs_usage_bytes",
+              "datasource": "Prometheus"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "bytes"
+            }
+          }
+        }
+      ]
+    }

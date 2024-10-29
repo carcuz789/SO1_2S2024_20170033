@@ -1,0 +1,37 @@
+{
+    "title": "Rendimiento de Aplicaciones",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Peticiones HTTP",
+        "targets": [
+          {
+            "expr": "rate(http_requests_total[5m])",
+            "legendFormat": "{{handler}}",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "requests/sec"
+          }
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Latencia de Peticiones HTTP",
+        "targets": [
+          {
+            "expr": "rate(http_request_duration_seconds_sum[5m]) / rate(http_request_duration_seconds_count[5m])",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s"
+          }
+        }
+      }
+    ]
+  }
+  

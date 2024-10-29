@@ -1,0 +1,22 @@
+{
+    "title": "Conteo de Ganadores por Disciplina",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Ganadores por Disciplina",
+        "targets": [
+          {
+            "expr": "sum by (discipline) (redis_key_value{key=~\"winner:.*\"})",
+            "legendFormat": "{{discipline}}",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "none"
+          }
+        }
+      }
+    ]
+  }
+  

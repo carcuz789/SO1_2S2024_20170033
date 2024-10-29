@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: faculty-service-rust
+  labels:
+    app: faculty-service-rust
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: faculty-service-rust
+  template:
+    metadata:
+      labels:
+        app: faculty-service-rust
+    spec:
+      containers:
+      - name: faculty-service-rust
+        image: gcr.io/your-project-id/faculty-service-rust:latest
+        ports:
+        - containerPort: 8084
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: faculty-service-rust
+spec:
+  selector:
+    app: faculty-service-rust
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8084
+  type: LoadBalancer

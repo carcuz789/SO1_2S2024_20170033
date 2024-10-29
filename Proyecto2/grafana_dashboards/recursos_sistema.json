@@ -1,0 +1,51 @@
+{
+    "title": "Recursos del Sistema",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Uso de CPU",
+        "targets": [
+          {
+            "expr": "rate(container_cpu_usage_seconds_total[5m])",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "cores"
+          }
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Uso de Memoria",
+        "targets": [
+          {
+            "expr": "container_memory_usage_bytes",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "bytes"
+          }
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Uso de Disco",
+        "targets": [
+          {
+            "expr": "container_fs_usage_bytes",
+            "datasource": "Prometheus"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "bytes"
+          }
+        }
+      }
+    ]
+  }
+  
