@@ -1,11 +1,10 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"log"
 	"net/http"
-
-	"google.golang.org/grpc"
 )
 
 type ParticipationRequest struct {
@@ -21,32 +20,34 @@ func participateHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Dependiendo de la disciplina, conecta con el servicio adecuado usando gRPC
+	// Dependiendo de la disciplina, conecta con el servicio adecuado
 	switch request.Discipline {
 	case 1:
 		// Conectar al servicio de Natación
-		connectToDisciplineService("swimming-service:8081")
+		sendRequestToDisciplineService("http://swimming-service:80/compete")
 	case 2:
 		// Conectar al servicio de Atletismo
-		connectToDisciplineService("track-service:8082")
+		sendRequestToDisciplineService("http://track-service:80/compete")
 	case 3:
 		// Conectar al servicio de Boxeo
-		connectToDisciplineService("boxing-service:8083")
+		sendRequestToDisciplineService("http://boxing-service:80/compete")
 	default:
 		http.Error(w, "Invalid discipline", http.StatusBadRequest)
 	}
 }
 
-func connectToDisciplineService(address string) {
-	conn, err := grpc.Dial(address, grpc.WithInsecure())
+func sendRequestToDisciplineService(url string) {
+	// Crear un cuerpo de solicitud vacío ya que no se envía información adicional
+	requestBody, _ := json.Marshal(map[string]string{})
+
+	resp, err := http.Post(url, "application/json", bytes.NewBuffer(requestBody))
 	if err != nil {
-		log.Printf("Error connecting to discipline service: %v", err)
+		log.Printf("Error connecting to %s: %v", url, err)
 		return
 	}
-	defer conn.Close()
+	defer resp.Body.Close()
 
-	// Aquí se envía la solicitud al servicio específico (detalles omitidos)
-	log.Printf("Solicitud enviada al servicio en %s", address)
+	log.Printf("Solicitud enviada a %s con respuesta: %s", url, resp.Status)
 }
 
 func main() {
