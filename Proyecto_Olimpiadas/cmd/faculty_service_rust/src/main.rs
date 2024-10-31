@@ -12,9 +12,9 @@ struct ParticipationRequest {
 // Manejador para la solicitud de participación
 async fn participate(request: web::Json<ParticipationRequest>) -> impl Responder {
     let discipline_server = match request.discipline {
-        1 => "swimming-service:8081",
-        2 => "track-service:8082",
-        3 => "boxing-service:8083",
+        1 => "http://swimming-service:80/compete",
+        2 => "http://track-service:80/compete",
+        3 => "http://boxing-service:80/compete",
         _ => return HttpResponse::BadRequest().body("Invalid discipline"),
     };
     HttpResponse::Ok().body(format!("Redirigiendo a: {}", discipline_server))

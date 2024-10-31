@@ -1,5 +1,4 @@
 from locust import HttpUser, task, between
-import json
 import random
 
 class FacultyServiceEngineeringUser(HttpUser):
@@ -17,7 +16,7 @@ class FacultyServiceEngineeringUser(HttpUser):
         # Enviar solicitud POST al endpoint `/participate` de `faculty-service`
         self.client.post(
             "/participate",
-            data=json.dumps(participation_request),
+            json=participation_request,  # Usar `json=` para asegurarse de que el contenido se codifique correctamente como JSON
             headers={"Content-Type": "application/json"}
         )
 
@@ -36,6 +35,6 @@ class FacultyServiceAgronomyUser(HttpUser):
         # Enviar solicitud POST al endpoint `/participate` de `faculty-service-rust`
         self.client.post(
             "/participate",
-            data=json.dumps(participation_request),
+            json=participation_request,  # Usar `json=` en lugar de `data=` para JSON
             headers={"Content-Type": "application/json"}
         )

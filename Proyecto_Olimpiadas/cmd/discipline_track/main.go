@@ -1,10 +1,21 @@
 package main
 
 import (
+	"context"
+	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
+	"os"
 	"time"
+
+	"github.com/segmentio/kafka-go"
+)
+
+// Configuración para Kafka
+var (
+	kafkaBroker = os.Getenv("KAFKA_BROKER") // Dirección del broker de Kafka desde las variables de entorno
+	ctx         = context.Background()
 )
 
 func competeHandler(w http.ResponseWriter, r *http.Request) {
@@ -21,7 +32,19 @@ func competeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func publishResult(topic string, discipline string) {
-	// Conectar a Kafka y publicar resultado (detalles de conexión omitidos)
+	writer := kafka.NewWriter(kafka.WriterConfig{
+		Brokers: []string{kafkaBroker},
+		Topic:   topic,
+	})
+	defer writer.Close()
+
+	err := writer.WriteMessages(ctx, kafka.Message{
+		Value: []byte(fmt.Sprintf("Resultado de %s: %s", discipline, topic)),
+	})
+	if err != nil {
+		log.Printf("Error al publicar en Kafka - Tópico: %s, Error: %v", topic, err)
+		return
+	}
 	log.Printf("Resultado publicado en Kafka - Tópico: %s, Disciplina: %s", topic, discipline)
 }
 
