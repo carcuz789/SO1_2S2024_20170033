@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+
+    scrape_configs:
+      - job_name: 'kubernetes'
+        kubernetes_sd_configs:
+        - role: node
+
+      - job_name: 'kubernetes-pods'
+        kubernetes_sd_configs:
+        - role: pod
+
+      # Monitoreo de redis
+      - job_name: 'redis'
+        static_configs:
+          - targets: ['34.118.231.150:6379']
+
+      # Monitoreo de swimming-service
+      - job_name: 'swimming-service'
+        static_configs:
+          - targets: ['34.118.228.62:80']
+
+      # Monitoreo de track-service
+      - job_name: 'track-service'
+        static_configs:
+          - targets: ['34.118.236.250:80']
+
+      # Monitoreo de boxing-service
+      - job_name: 'boxing-service'
+        static_configs:
+          - targets: ['34.118.229.178:80']
+
+      # Monitoreo de faculty-service
+      - job_name: 'faculty-service'
+        static_configs:
+          - targets: ['35.226.180.252:80']
+
+      # Monitoreo de faculty-service-rust
+      - job_name: 'faculty-service-rust'
+        static_configs:
+          - targets: ['34.30.122.122:80']
+
+      # Monitoreo de go-app-service
+      - job_name: 'go-app-service'
+        static_configs:
+          - targets: ['34.68.136.29:80']

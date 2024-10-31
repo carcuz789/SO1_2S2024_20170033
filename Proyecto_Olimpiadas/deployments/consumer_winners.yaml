@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consumer-winners
+  labels:
+    app: consumer-winners
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: consumer-winners
+  template:
+    metadata:
+      labels:
+        app: consumer-winners
+    spec:
+      containers:
+      - name: consumer-winners
+        image: gcr.io/plenary-utility-438302-m7/consumer-winners:latest
+        env:
+        - name: KAFKA_BROKER
+          value: "kafka-cluster-kafka-bootstrap.kafka.svc.cluster.local:9092"
+        - name: REDIS_HOST
+          value: "redis"
+        - name: KAFKA_TOPIC
+          value: "winners"
+        ports:
+        - containerPort: 8080
